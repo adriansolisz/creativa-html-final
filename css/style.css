@@ -1,3 +1,4 @@
+/* ESTILOS BÁSICOS DEL CUERPO */
 body {
     margin: 0;
     padding: 0;
@@ -5,14 +6,17 @@ body {
     min-width: 320px;
 }
 
+/* ESPACIADO DEL NAV */
 nav {
     right: 40px;
 }
 
+/* COLOR DEL TEXTO EN NAVBAR */
 nav li a {
     color: white !important;
 }
 
+/* DISTINTIVOS DE HOVER/FOCUS */
 nav li a:hover,
 nav li a:focus {
     color: firebrick !important;
@@ -20,6 +24,7 @@ nav li a:focus {
     font-weight: 700 !important
 }
 
+/* ESTILO BOTÓN BÁSICO */
 .btn-round-black {
     color: white;
     padding: .25em 2em !important;
@@ -28,6 +33,7 @@ nav li a:focus {
     border-radius: 50px;
 }
 
+/* MODIFICACIÓN DE BOTÓN BÁSICO PARA MOBILE*/
 li a.btn-round-black {
     background-color: Transparent;
     background-repeat:no-repeat;
@@ -44,6 +50,7 @@ h3 {
     font-weight: 700;
 }
 
+/* ESTILO PARA PRIMER BLOQUE */
 .first-section {
     background-image: url('../img/bg-1-black.jpg');
     height: 550px;
@@ -55,16 +62,19 @@ h3 {
     align-items: center;
 }
 
+/* ESTILO GENÉRICO PARA FONDO ROJO */
 .bg-red {
     background: firebrick;
     padding: .5em 0;
 }
 
+/* ESTILO GENÉRICO PARA TEXTO ROJO Y BOLD */
 .red-text {
     color: firebrick;
     font-weight: 1000;
 }
 
+/* DISTINTIVOS DE HOVER/FOCUS PARA BOTÓN BÁSICO */
 .btn-round-black:hover,
 .btn-round-black:focus {
     opacity: .7;
@@ -74,16 +84,19 @@ h3 {
     border: solid firebrick .7px;
 }
 
+/* OCULTAR GUITARRISTAS PARA MOBILE */
 .player-container {
     display: none;
 }
 
+/* ESTILO GENÉRICO PARA IMAGEN DE GUITARRISTAS */
 .player-container img {
     height: 300px;
     max-width: 150px;
     margin-left: 4.5em;
 }
 
+/* ESTILO PARA CONTENEDOR DE BLOQUE DE NOTICIAS */
 .news-container,
 .events-container {
     padding-top: 5%;
@@ -93,23 +106,28 @@ h3 {
     color: white;
 }
 
+/* ESTILO GENÉRICO PARA TEXTO BOLD */
 .bold-text {
     font-weight: 700;
 }
 
+/* ESTILO GENÉRICO PARA TEXTO LIGHT */
 .light-text {
     opacity: .4;
 }
 
+/* ESPACIADO PARA LA FECHA EN BLOQUE DE NOTICIAS */
 #date {
     padding-left: .675em;
 }
 
+/* ESTILO PARA TEXTO DE BLOQUE DE NOTICIAS */
 .news-text {
     text-align: center;
     padding: 1em 2em !important;
 }
 
+/* ESTILO PARA TERCER BLOQUE */
 .third-section {
     background-image: url('../img/bg-slider.jpg');
     height: auto;
@@ -118,6 +136,7 @@ h3 {
     background-position: center;
 }
 
+/* ESTILO PARA REPETIR FONDO EN SLIDER */
 .bg-repeat {
     background-image: url('../img/bg-slider.jpg');
     padding: 1em !important;
@@ -128,6 +147,7 @@ h3 {
    opacity: .65 !important;
 }
 
+/* ESTILO DE ALBUM/BLOQUE INDIVIDUAL DENTRO DEL SLIDER */
 .album {
     width: 90%;
     margin: 0 auto;
@@ -135,18 +155,22 @@ h3 {
     color: white;
 }
 
+/* ESPACIADO PARA BLOQUE INDIVIDUAL DE EVENTO */
 .event {
     margin: 1.25em 0em;
 }
 
+/* ESPACIADO PARA TEXTO DE EVENTO */
 .event p {
     margin: 0;
 }
 
+/* ESPACIADO PARA CONTENEDOR PRINCIPAL DE LISTA DE EVENTOS */
 .events-container {
     padding-bottom: 1.125em;
 }
 
+/* ESTILOS PARA EL ÚLTIMO BLOQUE */
 .fifth-section {
         background-image: url('../img/bg-5.jpg');
         background-size: 100% 100%;
@@ -155,6 +179,7 @@ h3 {
         justify-content: center;
 }
 
+/* ESTILO PARA CONTENEDOR DE INFO SOBRE LA BANDA */
 .band {
     width: 90%;
     color: white;
@@ -162,6 +187,7 @@ h3 {
     text-align: center;
 }
 
+/* ESTILO BASE DE FOOTER */
 .footer-container {
     color: white;
     display: flex;
@@ -173,22 +199,29 @@ h3 {
     text-align: center;
 }
 
+/* ESTILO DE LISTA DE ÍCONOS */
 .footer-icons {
     display: flex;
-    list-style: none;
     justify-content: space-evenly;
+    align-content: top;
+    list-style: none;
+    margin: 0;
     padding: 0;
 }
 
+/* ESTILO DE ÍCONO */
 i {
     color: white;
     padding-right: 1em;
 }
 
+/* DIFERENCIADOR PARA ÍCONOS HOVER/FOCUS */
 i:hover,
 i:focus {
     color: grey;
 }
+
+/* PRIMER BREAKPOINT */
 @media (min-width:475px) {
 
     .fifth-section {
@@ -203,8 +236,23 @@ i:focus {
      .footer-container {
          flex-direction: row;
      }
+
+     .social {
+        padding-right: 1.5em;
+        display: flex;
+        align-items: center;
+    }
+
+    .social h6 {
+        margin: auto 0;
+    }
+
+     .footer-icons {
+        align-items: center !important;
+     }
 }
 
+/* SEGUNDO BREAKPOINT */
 @media (min-width:768px) {
     
     .first-section {
@@ -268,5 +316,4 @@ i:focus {
         height: 550px;
         object-fit: cover;
      }
-
 }
